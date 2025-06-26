@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DatasetProtection xmlns="urn:mpeg:mpeg-g:protection:dataset:2019" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xacml="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:mpeg-g:protection:dataset:2019 C:\test\resources\schemas\ISOIEC_23092-3_Annex_A4_dtpr_schema_SL.xsd">
+   
+   <KeyTransportAES>
+    <keyName>DerivedKey1</keyName>
+    <KeyDerivation>
+      <PRF>urn:mpeg:mpeg-g:protection:hmac-sha256</PRF>
+      <salt>a1b2c3d4e5==</salt>
+      <iterations>10000</iterations>
+      <length>32</length>
+    </KeyDerivation>
+  </KeyTransportAES>
+  <EncryptionParameters encryptedLocations="metadata" configurationID="1">
+    <cipher>urn:mpeg:mpeg-g:protection:aes128-ctr</cipher>
+    <keyName>DerivedKey1</keyName>
+    <!-- IV es opcional en CTR, pero aquí lo incluimos -->
+    <IV>AAECAwQFBgcICQoL</IV>
+  </EncryptionParameters>
+
+   
+</DatasetProtection>

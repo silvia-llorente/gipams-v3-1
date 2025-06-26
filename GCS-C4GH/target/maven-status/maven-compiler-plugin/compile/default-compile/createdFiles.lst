@@ -1,0 +1,8 @@
+gcsc4gh\GCSC4GH.class
+gcsc4gh\Utils\AuthorizationUtil.class
+gcsc4gh\Security\Secured.class
+gcsc4gh\Utils\UrlUtil.class
+gcsc4gh\ApplicationConfig.class
+gcsc4gh\Utils\Utils.class
+gcsc4gh\Security\RestSecurityFilter.class
+gcsc4gh\Utils\JWTUtil.class

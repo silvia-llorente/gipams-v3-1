@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<DatasetGroupMetadata xmlns="urn:mpeg:mpeg-g:metadata_encrypted:dataset_group:2019" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:mpeg-g:metadata_encrypted:dataset_group:2019 C:\test\resources\schemas\ISOIEC_23092-3_Annex_A1_dgmd_schema.xsd">
+	<Title>Això es un cachondeo dels bons</Title>
+	<ProjectCentre>
+		<ProjectCentreName>Univeristat Politènica de Catalunya</ProjectCentreName>
+	</ProjectCentre>
+	<Description>Això es un test per verificar el funcionament dels diferents metodes d'encirptació i transport de claus.</Description>
+</DatasetGroupMetadata>

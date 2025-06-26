@@ -1,0 +1,11 @@
+db\modifiers\dtM.class
+db\consults\auC.class
+Run.class
+db\Main.class
+db\modifiers\mpegM.class
+db\modifiers\auM.class
+db\consults\dtC.class
+db\modifiers\dgM.class
+db\consults\mpegC.class
+db\connManager\ConnectionManager.class
+db\consults\dgC.class

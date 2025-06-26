@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DatasetGroupProtection 
+    xmlns="urn:mpeg:mpeg-g:protection:dataset-group:2019" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"       
+    xsi:schemaLocation="urn:mpeg:mpeg-g:protection:dataset-group:2019 C:\test\resources\schemas\ISOIEC_23092-3_Annex_A3_dgpr_schema_SL.xsd">
+    
+    <KeyTransportAES><keyName>TransportKey1</keyName><KeySymmetricWrap><kek>PnJzYXsZxPtLvXqIXNyCTxxL4OIf/tvdxF8V8GhMJ4Q=</kek><wrappedKey>9AHyMbwoHAfa3WTd7J3PHi6pW9PxnNg958DG3lRN+3G7i7s3HdgDew==</wrappedKey></KeySymmetricWrap></KeyTransportAES><EncryptionParameters configurationID="1" encryptedLocations="metadata"><cipher>urn:mpeg:mpeg-g:protection:aes256-gcm</cipher><keyName>TransportKey1</keyName><IV>510M2JtNMU5yDxLH</IV><TAG>0VKqcvcAiBcAWxvsEeHRKA==</TAG></EncryptionParameters><SignatureParameters><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>TfPjFAyI7sIDJJTCbOQu5zaConDI9j5qAznsAnm4RI8=</DigestValue></Reference></SignedInfo><SignatureValue>QVnBxNdR/8LgXxUZ10o/yWd7odgXJyGMp9/w7RdRTNAUgT+M+6nS22HRfqmlXOG/hs3YLBRTZVHR&#13;
+sSzu8R1GwkO+GoG8h8vqdDJhTTWurw9Snnc7Xxyh6Tyo5nRulp6e8XtgIEMPKSTJQeBji7OZa6i9&#13;
+DpMbtPlr7nRU7z+XYLflXivKB/QHa9T4QXabK658lvXT3Wk91yOieXIHeszOQbT/EGrvUwmXRsun&#13;
+aT35A9In2MCv+EIPBESsz4KFrvYSJMdBYpt7//FGhI1X78SRh0Ou64qJUncY+GrlY6+5XAYxp/n3&#13;
+jyDbNnbAS/DlA6ixoAM+1c0T45LTp9gF2jY0Zg==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIDYTCCAkmgAwIBAgIIKsVwIgXo6GcwDQYJKoZIhvcNAQELBQAwXzELMAkGA1UEBhMCRVMxEjAQ&#13;
+BgNVBAgTCVByb3ZpbmNpYTEPMA0GA1UEBxMGQ2l1ZGFkMQwwCgYDVQQKEwNPcmcxDTALBgNVBAsT&#13;
+BERlcHQxDjAMBgNVBAMTBUFybmF1MB4XDTI1MDUwNzEyNTQxMloXDTI2MDUwNzEyNTQxMlowXzEL&#13;
+MAkGA1UEBhMCRVMxEjAQBgNVBAgTCVByb3ZpbmNpYTEPMA0GA1UEBxMGQ2l1ZGFkMQwwCgYDVQQK&#13;
+EwNPcmcxDTALBgNVBAsTBERlcHQxDjAMBgNVBAMTBUFybmF1MIIBIjANBgkqhkiG9w0BAQEFAAOC&#13;
+AQ8AMIIBCgKCAQEAvdG/gtB8xukbHgtoyfBSrazSuuhgvNurJLaC6YtnKwtEOoVVmmzKS1YAZaXw&#13;
+JpCQpI/p7vSB2dwmZT9jcEYvDReKFJJdQa2m6Meo+L/bjj6RbzS7gTVXOEKAbq9EEfPBKA2i9Myp&#13;
+pxQHzZkD258+ob5hfsbFe8RvqnG4mgh/7nEd9U8C9i+hR6+t1VByIHxBtKsHvLBJggkk1hAI+FaN&#13;
+MmTbXqVt+EGyp0kGsbVPo5HqNglgm3ITpDIRJmgnmp+ucPDanxfBtx9EXvBE0y3gFW/F0FEC2u6R&#13;
+/i5Od6GUfIRcpz/SzjCP/Y/8lgwHOkLNqAWGoPVugyr7+7Mplcg5NQIDAQABoyEwHzAdBgNVHQ4E&#13;
+FgQUk0q3RBQyWDoUBj5dWjNKtaS+rDwwDQYJKoZIhvcNAQELBQADggEBAJSfyIB0Yuk+JbiVNPbQ&#13;
+hrawH1dfBujdeox42bJpQnswLXCs1aPNp5IkmipZW1Mz/t4BNSfaCl5YdEGsAma7MAFOOBqCsAhy&#13;
+/kggAjs0rKtjMVMLuyiXYOxojXphiTBMZZwB9f6PCytpBizZhu7sAcbHFOkVS9NnvTxqGXMRwXYW&#13;
+1QGdWvGYsjtMrUtkNuf/W40/qXtG6mktzvlRfk9LeIbxiGqmGjA5FvgNERnMvdPgejE08Qe5osrQ&#13;
+B9At3esFj7iMlL1+vC4zRdC5Y+9Scz4yySl70uBSYCtUHR3Ysv+jLSgAdBIel5PMYgErXlC41AXe&#13;
+QVbLtOdIPtAdyfquMw0=</X509Certificate></X509Data></KeyInfo></Signature></SignatureParameters>
+    <Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17"    
+            xsi:schemaLocation="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17 ./xacml-core-v3-schema-wd-17.xsd"
+            PolicyId="urn:isdcm:policyid:1"
+            RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable"
+            Version="1.0">
+        <Description> Policy getDataDataset </Description>
+        <Target/>
+        <Rule RuleId="urn:oasis:names:tc:xacml:2.0:ejemplo:RuleMed" Effect="Permit">
+            <Description> Any action for researcher is permitted </Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <!-- Which kind of user: researcher -->
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">researcher</AttributeValue>
+                            <AttributeDesignator MustBePresent="false"
+                                                 Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject"
+                                                 AttributeId="urn:oasis:names:tc:xacml:3.0:example:attribute:role"
+                                                 DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+        </Rule>
+        <Rule RuleId="urn:oasis:names:tc:xacml:2.0:ejemplo:RuleGen" Effect="Permit">
+            <Description> Get Data from Dataset for practitioner under Emergency situation
+            </Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <!-- Which kind of user: practitioner -->
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue
+                                    DataType="http://www.w3.org/2001/XMLSchema#string">practitioner</AttributeValue>
+                            <AttributeDesignator MustBePresent="true"
+                                                 Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject"
+                                                 AttributeId="urn:oasis:names:tc:xacml:3.0:example:attribute:role"
+                                                 DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                        </Match>
+                        <!-- Which action -->
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue
+                                    DataType="http://www.w3.org/2001/XMLSchema#string">GetDataDataset</AttributeValue>
+                            <AttributeDesignator MustBePresent="true"
+                                                 Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action"
+                                                 AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id"
+                                                 DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:date-less-than-or-equal">
+                        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:date-one-and-only">
+                            <AttributeDesignator MustBePresent="true"
+                                                 Category="urn:oasis:names:tc:xacml:3.0:date"
+                                                 AttributeId="accessDate"
+                                                 DataType="http://www.w3.org/2001/XMLSchema#date"/>
+                        </Apply>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">2019-01-01</AttributeValue>
+                    </Apply>
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:boolean-equal">
+                        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:boolean-one-and-only">
+                            <AttributeDesignator MustBePresent="true" Category="alignment"
+                                                 AttributeId="presence_of_multiple_alignments"
+                                                 DataType="http://www.w3.org/2001/XMLSchema#boolean"/>
+                        </Apply>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#boolean">false</AttributeValue>
+                    </Apply>
+                    <Apply
+                            FunctionId="urn:oasis:names:tc:xacml:1.0:function:double-greater-than-or-equal">
+                        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:double-one-and-only">
+                            <AttributeDesignator MustBePresent="true" Category="score"
+                                                 AttributeId="alignment_score"
+                                                 DataType="http://www.w3.org/2001/XMLSchema#double"/>
+                        </Apply>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#double">0.5</AttributeValue>
+                    </Apply>
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-less-than-or-equal">
+                        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+                            <AttributeDesignator MustBePresent="true" Category="threshold"
+                                                 AttributeId="mismatch_threshold"
+                                                 DataType="http://www.w3.org/2001/XMLSchema#integer"/>
+                        </Apply>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">5</AttributeValue>
+                    </Apply>
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-equal">
+                        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+                            <AttributeDesignator MustBePresent="true" Category="type"
+                                                 AttributeId="class_type"
+                                                 DataType="http://www.w3.org/2001/XMLSchema#integer"/>
+                        </Apply>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">3</AttributeValue>
+                    </Apply>
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-less-than-or-equal">
+                        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+                            <AttributeDesignator MustBePresent="true" Category="count"
+                                                 AttributeId="read_count"
+                                                 DataType="http://www.w3.org/2001/XMLSchema#integer"/>
+                        </Apply>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#integer">5000</AttributeValue>
+                    </Apply>
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                            <AttributeDesignator MustBePresent="true"
+                                                 Category="urn:oasis:names:tc:xacml:3.0:string"
+                                                 AttributeId="situation"
+                                                 DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                        </Apply>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Emergency</AttributeValue>
+                    </Apply>
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:or">
+                        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+                            <Apply
+                                    FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-equal">
+                                <Apply
+                                        FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+                                    <AttributeDesignator MustBePresent="true"
+                                                         Category="sequence"
+                                                         AttributeId="reference_sequence"
+                                                         DataType="http://www.w3.org/2001/XMLSchema#integer"/>
+                                </Apply>
+                                <AttributeValue
+                                        DataType="http://www.w3.org/2001/XMLSchema#integer">4</AttributeValue>
+                            </Apply>
+                            <Apply
+                                    FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-greater-than-or-equal">
+                                <Apply
+                                        FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+                                    <AttributeDesignator MustBePresent="true"
+                                                         Category="urn:oasis:names:tc:xacml:3.0:integer"
+                                                         AttributeId="position"
+                                                         DataType="http://www.w3.org/2001/XMLSchema#integer"/>
+                                </Apply>
+                                <AttributeValue
+                                        DataType="http://www.w3.org/2001/XMLSchema#integer">40810027</AttributeValue>
+                            </Apply>
+                            <Apply
+                                    FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-less-than-or-equal">
+                                <Apply
+                                        FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+                                    <AttributeDesignator MustBePresent="true"
+                                                         Category="urn:oasis:names:tc:xacml:3.0:integer"
+                                                         AttributeId="position"
+                                                         DataType="http://www.w3.org/2001/XMLSchema#integer"/>
+                                </Apply>
+                                <AttributeValue
+                                        DataType="http://www.w3.org/2001/XMLSchema#integer">41216714</AttributeValue>
+                            </Apply>
+                        </Apply>
+                        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+                            <Apply
+                                    FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-equal">
+                                <Apply
+                                        FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+                                    <AttributeDesignator MustBePresent="true"
+                                                         Category="sequence"
+                                                         AttributeId="reference_sequence"
+                                                         DataType="http://www.w3.org/2001/XMLSchema#integer"/>
+                                </Apply>
+                                <AttributeValue
+                                        DataType="http://www.w3.org/2001/XMLSchema#integer">6</AttributeValue>
+                            </Apply>
+                            <Apply
+                                    FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-greater-than-or-equal">
+                                <Apply
+                                        FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+                                    <AttributeDesignator MustBePresent="true"
+                                                         Category="urn:oasis:names:tc:xacml:3.0:integer"
+                                                         AttributeId="position"
+                                                         DataType="http://www.w3.org/2001/XMLSchema#integer"/>
+                                </Apply>
+                                <AttributeValue
+                                        DataType="http://www.w3.org/2001/XMLSchema#integer">26087281</AttributeValue>
+                            </Apply>
+                            <Apply
+                                    FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-less-than-or-equal">
+                                <Apply
+                                        FunctionId="urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only">
+                                    <AttributeDesignator MustBePresent="true"
+                                                         Category="urn:oasis:names:tc:xacml:3.0:integer"
+                                                         AttributeId="position"
+                                                         DataType="http://www.w3.org/2001/XMLSchema#integer"/>
+                                </Apply>
+                                <AttributeValue
+                                        DataType="http://www.w3.org/2001/XMLSchema#integer">26098343</AttributeValue>
+                            </Apply>
+                        </Apply>
+                    </Apply>
+                </Apply>
+                <!-- closes and -->
+            </Condition>
+        </Rule>
+        <Rule RuleId="urn:oasis:names:tc:xacml:2.0:ejemplo:RuleDeny" Effect="Deny"/>
+    </Policy>
+    
+</DatasetGroupProtection>

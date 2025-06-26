@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescriptorStreamProtection xmlns="urn:mpeg:mpeg-g:protection:descriptor-stream:2019" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:mpeg-g:protection:descriptor-stream:2019 C:\test\resources\schemas\ISOIEC_23092-3_Annex_A6_dspr_schema_SL.xsd">
+  
+  <SignatureParameters xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+			<ds:Signature>
+				<ds:SignedInfo>
+					<ds:CanonicalizationMethod Algorithm=""></ds:CanonicalizationMethod>
+					<ds:SignatureMethod Algorithm=""></ds:SignatureMethod>
+					<ds:Reference>
+						<ds:DigestMethod Algorithm=""></ds:DigestMethod>
+						<ds:DigestValue></ds:DigestValue>
+					</ds:Reference>
+				</ds:SignedInfo>
+				<ds:SignatureValue></ds:SignatureValue>
+			</ds:Signature>
+		</SignatureParameters>
+  
+  
+  
+  
+  </DescriptorStreamProtection>

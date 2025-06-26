@@ -1,0 +1,7 @@
+polS\Utils\JWTUtil.class
+polS\ApplicationConfig.class
+polS\PolS.class
+polS\Utils\AuthorizationUtil.class
+polS\Utils\UrlUtil.class
+polS\Security\Secured.class
+polS\Security\RestSecurityFilter.class

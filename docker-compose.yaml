@@ -1,0 +1,90 @@
+services:
+  keycloak_db:
+    image: mysql:latest
+    container_name: keycloak-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_USER: keycloak
+      MYSQL_PASSWORD: keycloak
+      MYSQL_DATABASE: keycloak
+    volumes:
+      - ./volumes/keycloak/database:/var/lib/mysql  # Montar volumen para persistencia de datos
+
+  authentication-service:
+    image: quay.io/keycloak/keycloak:26.1.4
+    container_name: keycloak
+    environment:
+      KC_DB: mysql
+      KC_DB_URL_HOST: keycloak-db
+      KC_HOSTNAME: localhost
+      KC_DB_USERNAME: keycloak
+      KC_DB_PASSWORD: keycloak
+      KC_HOSTNAME_PORT: 9090
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin
+      KC_LOG_LEVEL: info
+    command: ["start-dev", "--http-port", "9090"]
+    ports:
+      - 9090:9090
+    depends_on:
+      - keycloak_db
+    volumes:
+      - ./volumes/keycloak/standalone:/opt/jboss/keycloak/standalone/  # Montar volumen para persistencia de datos
+  database_gipams:
+    image: mysql:latest
+    volumes:
+      - ./volumes/db/init.sql:/docker-entrypoint-initdb.d/1.sql
+      - ./volumes/db/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - "3306:3306"
+    
+  #es pels logs generats pel RMM o RMC
+  mongodb-database:
+    image: mongo
+    volumes:
+      - ./volumes/mongodb/init.js:/docker-entrypoint-initdb.d/1.js
+      - ./volumes/mongodb/data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoadmin
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: admin
+    networks:
+      private-net:
+        ipv4_address: 192.168.183.123
+
+  nginx_rproxy:
+    image: openresty/openresty:latest
+    volumes:
+      - ./volumes/proxy/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./volumes/proxy/certs:/etc/certs
+      - ./volumes/proxy/scripts/ip_block.lua:/etc/nginx/ip_block.lua
+      - ./volumes/proxy/scripts/ip_unblock.lua:/etc/nginx/ip_unblock.lua
+      - ./volumes/proxy/scripts/ip_check.lua:/etc/nginx/ip_check.lua
+    ports:
+      - "443:443"
+    networks:
+      private-net:
+        ipv4_address: 192.168.183.112
+      public-net:
+        ipv4_address: 192.168.12.5
+
+
+networks:
+  private-net:
+    name: private-net
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.183.0/24
+          gateway: 192.168.183.1
+
+  public-net:
+    name: public-net
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.12.0/24
+          gateway: 192.168.12.1

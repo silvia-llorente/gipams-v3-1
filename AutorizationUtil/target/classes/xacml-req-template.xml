@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17
+        http://docs.oasis-open.org/xacml/3.0/xacml-core-v3-schema-wd-17.xsd"
+        PolicyId="urn:isdc:policyid:1"
+        RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable"
+        Version="1.0">
+    <Description>Policy example</Description>
+    <Rule RuleId="urn:oasis:names:tc:xacml:2.0:ejemplo:RuleMed" Effect="Permit">
+        <Description>This is an example policy for GIPAMS</Description>
+        <Target>
+            <AnyOf>
+                <AllOf>
+                    <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">
+                            Test-Role
+                        </AttributeValue>
+                        <AttributeDesignator MustBePresent="false"
+                                             Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject"
+                                             AttributeId="urn:oasis:names:tc:xacml:2.0:example:attribute-role"
+                                             DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                    </Match>
+                    <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">
+                            GetMetadataTestAction
+                        </AttributeValue>
+                        <AttributeDesignator MustBePresent="true"
+                                             Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action"
+                                             AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id"
+                                             DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                    </Match>
+                    <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:date-less-than-or-equal">
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#date">
+                            2022-05-12
+                        </AttributeValue>
+                        <AttributeDesignator MustBePresent="true"
+                                             Category="urn:oasis:names:tc:xacml:3.0:attribute-category:date"
+                                             AttributeId="urn:oasis:names:tc:xacml:1.0:action:access-date"
+                                             DataType="http://www.w3.org/2001/XMLSchema#date"/>
+                    </Match>
+                </AllOf>
+            </AnyOf>
+        </Target>
+    </Rule>
+    <Rule RuleId="urn:oasis:names:tc:xacml:2.0:ejemplo:RuleDeny" Effect="Deny"/>
+</Policy>
